@@ -42,7 +42,11 @@ module.exports = defineConfig({
                   ],
                   plugins: [
                     'istanbul',
-                    ['@babel/plugin-transform-typescript', {loose: true}],
+                    [
+                      '@babel/plugin-transform-modules-commonjs',
+                      '@babel/plugin-transform-typescript',
+                      {loose: true},
+                    ],
                   ],
                 },
               },
