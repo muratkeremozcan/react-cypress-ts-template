@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
 import {MountOptions, MountReturn} from 'cypress/react'
 
 export {}
@@ -9,10 +10,7 @@ declare global {
        * cy.getByCy('search-toggle') // where the selector is [data-cy="search-toggle"]
        * ```
        */
-      getByCy(
-        qaSelector: string,
-        args?: unknown,
-      ): Chainable<JQuery<HTMLElement>>
+      getByCy(qaSelector: string, args?: any): Chainable<JQuery<HTMLElement>>
 
       /** Yields elements with data-cy attribute that partially matches a specified selector.
        * ```
@@ -21,7 +19,7 @@ declare global {
        */
       getByCyLike(
         dataTestPrefixAttribute: string,
-        args?: unknown,
+        args?: any,
       ): Chainable<JQuery<HTMLElement>>
 
       /** Mounts a React node
