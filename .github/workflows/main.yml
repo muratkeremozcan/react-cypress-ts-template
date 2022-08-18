@@ -15,7 +15,7 @@ jobs:
       - uses: actions/checkout@v3
       - uses: actions/setup-node@v3
         with:
-          cache: 'npm'
+          cache: 'yarn'
           node-version: 16.10.0
 
       - uses: bahmutov/npm-install@v1.8.21
@@ -34,7 +34,7 @@ jobs:
         env:
           CYPRESS_INSTALL_BINARY: 0
       - name: unit-test
-        run: npm test
+        run: yarn test
 
       # if you want to enable codecov
       # - name: Upload artifacts
@@ -95,7 +95,7 @@ jobs:
         uses: cypress-io/github-action@v4.2.0
         with:
           install: false # no need to install
-          start: npm start
+          start: yarn start
           wait-on: 'http://localhost:3000'
           browser: chrome
           # if you want to enable parallelization
@@ -124,9 +124,10 @@ jobs:
       #     token: ${{ secrets.CODECOV_TOKEN }}
 
   cypress-ct-test:
-    strategy:
-      matrix:
-        machines: [1, 2, 3f]
+    # if you want to enable parallelization
+    # strategy:
+    #   matrix:
+    #     machines: [1, 2, 3]
     needs: [install-dependencies]
     runs-on: ubuntu-latest
     container: cypress/included:10.4.0 # save time on not having to install cypress
