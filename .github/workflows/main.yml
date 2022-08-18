@@ -124,9 +124,10 @@ jobs:
       #     token: ${{ secrets.CODECOV_TOKEN }}
 
   cypress-ct-test:
-    strategy:
-      matrix:
-        machines: [1, 2, 3f]
+    # if you want to enable parallelization
+    # strategy:
+    #   matrix:
+    #     machines: [1, 2, 3]
     needs: [install-dependencies]
     runs-on: ubuntu-latest
     container: cypress/included:10.4.0 # save time on not having to install cypress
