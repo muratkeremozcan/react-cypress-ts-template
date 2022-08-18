@@ -11,7 +11,7 @@
 [renovate-badge]: https://img.shields.io/badge/renovate-app-blue.svg
 [renovate-app]: https://renovateapp.com/
 
-A template with React, TS, Cypress (e2e & ct), GHA with CI configs, Jest,
+A template with React, TS, Cypress (e2e & ct), GHA with CI architecture, Jest,
 ESLint, Prettier, Renovate, Husky, Lint-staged, and most of the things you need
 to get started with a new project.
 
@@ -37,7 +37,7 @@ yarn test # run unit tests with jest
 ```
 build  -->  Cypress e2e test
        -->  Cypress component test
-       -->  typecheck
-			 -->	lint
-			 -->  unit
+       -->  Typecheck
+       -->	Lint
+       -->  Unit test
 ```
