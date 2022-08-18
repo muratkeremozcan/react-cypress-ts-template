@@ -19,6 +19,12 @@ module.exports = defineConfig({
     devServer: {
       framework: 'create-react-app',
       bundler: 'webpack',
+      webpackConfig: {
+        // workaround to react scripts 5 issue https://github.com/cypress-io/cypress/issues/22762#issuecomment-1185677066
+        devServer: {
+          port: 3001,
+        },
+      },
     },
   },
 })
