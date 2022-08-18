@@ -38,6 +38,6 @@ yarn test # run unit tests with jest
 build  -->  Cypress e2e test
        -->  Cypress component test
        -->  Typecheck
-       -->	Lint
+       -->  Lint
        -->  Unit test
 ```
