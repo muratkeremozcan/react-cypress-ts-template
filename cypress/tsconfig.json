@@ -2,16 +2,10 @@
   "compilerOptions": {
     "target": "esnext",
     "lib": ["esnext", "dom"],
-    "types": [
-      "cypress",
-      "node",
-      "@bahmutov/cy-api",
-      "cypress-data-session",
-      "cypress-each"
-    ],
+    "types": ["cypress", "node"],
     "allowJs": true,
     "resolveJsonModule": true
   },
-  "include": ["**/*.ts"],
+  "include": ["**/*.ts*", "../cypress.d.ts"],
   "extends": "../tsconfig.json"
 }
