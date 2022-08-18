@@ -15,6 +15,7 @@ module.exports = defineConfig({
   },
 
   component: {
+    specPattern: 'src/**/*.cy.{js,jsx,ts,tsx}',
     devServer: {
       framework: 'create-react-app',
       bundler: 'webpack',
