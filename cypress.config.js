@@ -1,7 +1,7 @@
-/* eslint-disable @typescript-eslint/no-unused-vars */
 const {defineConfig} = require('cypress')
 
 module.exports = defineConfig({
+  experimentalSingleTabRunMode: true,
   retries: {
     runMode: 2,
     openMode: 0,
@@ -9,7 +9,7 @@ module.exports = defineConfig({
   e2e: {
     specPattern: 'cypress/e2e/**/*.cy.{js,jsx,ts,tsx}',
     baseUrl: 'http://localhost:3000',
-    setupNodeEvents(on, config) {
+    setupNodeEvents(_on, _config) {
       // implement node event listeners here
       // and load any plugins that require the Node environment
     },

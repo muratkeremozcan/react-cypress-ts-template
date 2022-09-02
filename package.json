@@ -16,14 +16,15 @@
     "cy:open-e2e": "server-test 3000 'cypress open --e2e --browser chrome'",
     "cy:run-e2e": "server-test 3000 'cypress run --e2e --browser chrome'",
     "cy:open-ct": "cypress open --component --browser chrome",
-    "cy:run-ct": "cypress run --component --browser chrome"
+    "cy:run-ct": "cypress run --component --browser chrome",
+    "cy:run-ct-fast": "cypress run --component --browser chrome --config video=false screenShots=false"
   },
   "dependencies": {
     "npm-run-all": "4.1.5",
     "react": "18.2.0",
     "react-dom": "18.2.0",
     "react-scripts": "5.0.1",
-    "typescript": "4.8.2",
+    "typescript": "4.7.4",
     "web-vitals": "2.1.4"
   },
   "devDependencies": {
@@ -33,13 +34,14 @@
     "@testing-library/user-event": "14.4.3",
     "@types/jest": "28.1.8",
     "@types/node": "16.11.56",
-    "@types/react": "18.0.17",
+    "@types/react": "18.0.18",
     "@types/react-dom": "18.0.6",
-    "@typescript-eslint/eslint-plugin": "5.35.1",
-    "@typescript-eslint/parser": "5.35.1",
-    "cypress": "10.6.0",
-    "eslint": "8.22.0",
+    "@typescript-eslint/eslint-plugin": "5.36.1",
+    "@typescript-eslint/parser": "5.36.1",
+    "cypress": "10.7.0",
+    "eslint": "8.23.0",
     "eslint-config-prettier": "^8.5.0",
+    "eslint-config-react-app": "^7.0.1",
     "eslint-plugin-chai-friendly": "0.7.2",
     "eslint-plugin-cypress": "2.12.1",
     "eslint-plugin-no-only-tests": "3.0.0",
