@@ -41,3 +41,5 @@ build  -->  Cypress e2e test
        -->  Lint
        -->  Unit test
 ```
+
+> When updating packages, make sure that `react-scripts` and `jest` versions stay compatible. Ex: `react-scripts` latest version uses `jest v27`, but `jest`'s latest version is `29`. Double check node modules or `react-scripts` docs. The incompatibility may cause tools like WallabyJs to malfunction.
