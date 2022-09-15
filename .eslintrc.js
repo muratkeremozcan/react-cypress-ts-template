@@ -13,6 +13,10 @@ module.exports = {
     'no-only-tests/no-only-tests': 'error',
     '@typescript-eslint/explicit-module-boundary-types': 'off',
     '@typescript-eslint/no-var-requires': 'off',
+    'testing-library/no-render-in-setup': [
+      'error',
+      {allowTestingFrameworkSetupHook: 'beforeAll'},
+    ],
   },
   env: {
     browser: true,
