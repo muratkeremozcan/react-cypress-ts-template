@@ -34,7 +34,7 @@ jobs:
         env:
           CYPRESS_INSTALL_BINARY: 0
       - name: unit-test
-        run: yarn test
+        run: yarn test:coverage
 
       # if you want to enable codecov
       # - name: Upload artifacts
