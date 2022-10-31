@@ -18,6 +18,7 @@ jobs:
           cache: 'yarn'
           node-version: 16.10.0
 
+      # initial test
       - uses: bahmutov/npm-install@v1.8.25
         with: {useRollingCache: true} # recommended for large projects
         env:
