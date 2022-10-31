@@ -114,15 +114,10 @@ jobs:
       # - uses: bahmutov/npm-install@v1.8.25 # save time on dependencies
       #   with: {useRollingCache: true}
 
-      - name: Install dependencies
-        uses: cypress-io/github-action@v4.2.0
-        with:
-          runTests: false
-
       - name: Cypress e2e tests 🧪
         uses: cypress-io/github-action@v4.2.0
         with:
-          install: false # no need to install
+          # install: false # Cypress gha will take care of install instead of bahmutov/installs
           start: yarn start
           wait-on: 'http://localhost:3000'
           browser: chrome
@@ -165,16 +160,11 @@ jobs:
       # - uses: bahmutov/npm-install@v1.8.25 # save time on dependencies
       #   with: {useRollingCache: true}
 
-      - name: Install dependencies
-        uses: cypress-io/github-action@v4.2.0
-        with:
-          runTests: false
-
       - name: Cypress component tests 🧪
         uses: cypress-io/github-action@v4.2.0
         with:
           # we have already installed everything
-          install: false
+          # install: false # Cypress gha will take care of caching instead of bahmutov/installs
           component: true
           browser: chrome
           # if you want to enable parallelization
