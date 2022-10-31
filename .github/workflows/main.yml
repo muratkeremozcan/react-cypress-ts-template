@@ -107,12 +107,17 @@ jobs:
     #     machines: [1, 2]
     needs: [install-dependencies]
     runs-on: ubuntu-latest
-    container: cypress/included:10.11.0 # save time on not having to install cypress
+    # container: cypress/included:10.11.0 #  no need when using cypress gha to install dependencies
     steps:
       - uses: actions/checkout@v3
 
-      - uses: bahmutov/npm-install@v1.8.25 # save time on dependencies
-        with: {useRollingCache: true}
+      # - uses: bahmutov/npm-install@v1.8.25 # save time on dependencies
+      #   with: {useRollingCache: true}
+
+      - name: Install dependencies
+        uses: cypress-io/github-action@v4.2.0
+        with:
+          runTests: false
 
       - name: Cypress e2e tests 🧪
         uses: cypress-io/github-action@v4.2.0
@@ -153,12 +158,17 @@ jobs:
     #     machines: [1, 2, 3]
     needs: [install-dependencies]
     runs-on: ubuntu-latest
-    container: cypress/included:10.11.0 # save time on not having to install cypress
+    # container: cypress/included:10.11.0 # no need when using cypress gha to install dependencies
     steps:
       - uses: actions/checkout@v3
 
-      - uses: bahmutov/npm-install@v1.8.25 # save time on dependencies
-        with: {useRollingCache: true}
+      # - uses: bahmutov/npm-install@v1.8.25 # save time on dependencies
+      #   with: {useRollingCache: true}
+
+      - name: Install dependencies
+        uses: cypress-io/github-action@v4.2.0
+        with:
+          runTests: false
 
       - name: Cypress component tests 🧪
         uses: cypress-io/github-action@v4.2.0
