@@ -18,21 +18,21 @@ jobs:
       # with it, there is no need to setup node, and Cypress is cached.
       # if it's a non-Cypress install, use bahmutov/npm-install
 
-      - uses: actions/setup-node@v3
-        with:
-          cache: 'yarn'
-          node-version: 16.10.0
-      - uses: bahmutov/npm-install@v1.8.25
-        with: {useRollingCache: true} # recommended for large projects
-        env:
-          CYPRESS_INSTALL_BINARY: 0 # no need to install the Cypress binary, we are already using the docker image in the e2e job
+      # - uses: actions/setup-node@v3
+      #   with:
+      #     cache: 'yarn'
+      #     node-version: 16.10.0
+      # - uses: bahmutov/npm-install@v1.8.25
+      #   with: {useRollingCache: true} # recommended for large projects
+      #   env:
+      #     CYPRESS_INSTALL_BINARY: 0 # no need to install the Cypress binary, we are already using the docker image in the e2e job
 
       # Install NPM dependencies, cache node-modules and Cypress correctly
       # https://github.com/cypress-io/github-action
-      # - name: Install dependencies
-      #   uses: cypress-io/github-action@v4.2.0
-      #   with:
-      #     runTests: false
+      - name: Install dependencies
+        uses: cypress-io/github-action@v4.2.0
+        with:
+          runTests: false
 
   unit-test:
     needs: [install-dependencies]
@@ -40,14 +40,14 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
-      - uses: bahmutov/npm-install@v1.8.25
-        with: {useRollingCache: true}
-        env:
-          CYPRESS_INSTALL_BINARY: 0
-      # - name: Install dependencies
-      #   uses: cypress-io/github-action@v4.2.0
-      #   with:
-      #     runTests: false
+      # - uses: bahmutov/npm-install@v1.8.25
+      #   with: {useRollingCache: true}
+      #   env:
+      #     CYPRESS_INSTALL_BINARY: 0
+      - name: Install dependencies
+        uses: cypress-io/github-action@v4.2.0
+        with:
+          runTests: false
       - name: unit-test
         run: yarn test:coverage
 
@@ -72,10 +72,14 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
-      - uses: bahmutov/npm-install@v1.8.25
-        with: {useRollingCache: true}
-        env:
-          CYPRESS_INSTALL_BINARY: 0
+      # - uses: bahmutov/npm-install@v1.8.25
+      #   with: {useRollingCache: true}
+      #   env:
+      #     CYPRESS_INSTALL_BINARY: 0
+      - name: Install dependencies
+        uses: cypress-io/github-action@v4.2.0
+        with:
+          runTests: false
       - name: lint
         run: yarn lint
 
@@ -85,10 +89,14 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
-      - uses: bahmutov/npm-install@v1.8.25
-        with: {useRollingCache: true}
-        env:
-          CYPRESS_INSTALL_BINARY: 0
+      # - uses: bahmutov/npm-install@v1.8.25
+      #   with: {useRollingCache: true}
+      #   env:
+      #     CYPRESS_INSTALL_BINARY: 0
+      - name: Install dependencies
+        uses: cypress-io/github-action@v4.2.0
+        with:
+          runTests: false
       - name: typecheck
         run: yarn typecheck
 
