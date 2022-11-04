@@ -1,8 +1,9 @@
 import App from './App'
+import './index.css'
 
-describe('ct sanity', () => {
-  it('should render the App', () => {
+describe('CT sanity', () => {
+  it('passes sanity', () => {
     cy.mount(<App />)
-    cy.getByCy('greeting').should('be.visible')
+    cy.getByCy('count').contains('count is 0').dblclick().contains('count is 2')
   })
 })

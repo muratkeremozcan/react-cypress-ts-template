@@ -1,29 +1,26 @@
 {
-  "name": "react-cypress-ts-template",
-  "version": "0.1.0",
-  "license": "UNLICENSED",
+  "name": "quick-vitejs-react-typescript-jest",
+  "version": "1.0.0",
+  "license": "MIT",
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "test:coverage": "yarn test --watchAll=false --collectCoverageFrom=src/**/*.ts* --collectCoverageFrom=!src/**/*.*.ts* --coverage",
-    "test:debug": "node --inspect-brk ./node_modules/jest/bin/jest.js --watch --runInBand",
+    "start": "vite",
+    "build": "tsc && vite build",
+    "serve": "vite preview",
+    "test": "jest",
     "format": "prettier --ignore-path .gitignore --write \"**/*.+(js|json|css|md|mdx|html)\"",
     "lint": "eslint . --cache-location node_modules/.cache/eslint",
     "typecheck": "tsc --noEmit",
     "validate": "npm-run-all --parallel format lint typecheck build",
     "cy:open": "cypress open",
-    "cy:open-e2e": "server-test 3000 'cypress open --e2e --browser chrome'",
-    "cy:run-e2e": "server-test 3000 'cypress run --e2e --browser chrome'",
+    "cy:open-e2e": "server-test 5173 'cypress open --e2e --browser chrome'",
+    "cy:run-e2e": "server-test 5173 'cypress run --e2e --browser chrome'",
     "cy:open-ct": "cypress open --component --browser chrome",
     "cy:run-ct": "cypress run --component --browser chrome",
     "cy:run-ct-fast": "yarn cy:run-ct --config video=false screenshot=false"
   },
   "dependencies": {
     "react": "18.2.0",
-    "react-dom": "18.2.0",
-    "react-scripts": "5.0.1",
-    "web-vitals": "3.0.4"
+    "react-dom": "18.2.0"
   },
   "devDependencies": {
     "@testing-library/cypress": "8.0.3",
@@ -31,12 +28,13 @@
     "@testing-library/jest-dom": "5.16.5",
     "@testing-library/react": "13.4.0",
     "@testing-library/user-event": "14.4.3",
-    "@types/jest": "29.2.1",
+    "@types/jest": "^27.0.2",
     "@types/node": "18.11.9",
-    "@types/react": "18.0.24",
-    "@types/react-dom": "18.0.8",
+    "@types/react": "^17.0.0",
+    "@types/react-dom": "^18.0.8",
     "@typescript-eslint/eslint-plugin": "5.42.0",
     "@typescript-eslint/parser": "5.42.0",
+    "@vitejs/plugin-react": "^1.0.0",
     "cypress": "10.11.0",
     "eslint": "8.26.0",
     "eslint-config-prettier": "8.5.0",
@@ -46,30 +44,16 @@
     "eslint-plugin-no-only-tests": "3.1.0",
     "eslint-plugin-prettier": "4.2.1",
     "husky": "4.3.8",
-    "jest": "27.5.1",
+    "identity-obj-proxy": "^3.0.0",
+    "jest": "^27.3.1",
     "jest-environment-jsdom": "27.5.1",
     "lint-staged": "13.0.3",
     "npm-run-all": "4.1.5",
     "prettier": "2.7.1",
     "start-server-and-test": "1.14.0",
-    "ts-jest": "27.1.4",
-    "typescript": "4.8.3"
-  },
-  "husky": {
-    "hooks": {
-      "pre-commit": "yarn typecheck && yarn test --watchAll=false && lint-staged"
-    }
-  },
-  "browserslist": {
-    "production": [
-      ">0.2%",
-      "not dead",
-      "not op_mini all"
-    ],
-    "development": [
-      "last 1 chrome version",
-      "last 1 firefox version",
-      "last 1 safari version"
-    ]
+    "ts-jest": "^27.0.7",
+    "ts-node": "^10.4.0",
+    "typescript": "^4.3.2",
+    "vite": "3.2.0"
   }
 }

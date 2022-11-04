@@ -2,12 +2,7 @@
   "compilerOptions": {
     "target": "esnext",
     "lib": ["esnext", "dom"],
-    "types": ["cypress", "node", "@testing-library/cypress"],
-    "baseUrl": "./",
-    "paths": {
-      "@support/*": ["support/*"],
-      "@fixtures/*": ["fixtures/*"]
-    }
+    "types": ["cypress", "node", "@testing-library/cypress"]
   },
   "include": ["**/*.ts*", "../cypress.d.ts"],
   "extends": "../tsconfig.json"

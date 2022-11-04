@@ -5,7 +5,6 @@
   "extension": [".ts", ".tsx", "js", "jsx"],
   "include": ["src/**/*.tsx", "src/**/*.ts", "src/**/*.jsx", "src/**/*.js"],
   "exclude": [
-    "src/setupTests.ts",
     "src/**/*.test.tsx",
     "src/**/*.cy.ts",
     "src/**/*.cy.tsx",
