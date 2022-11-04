@@ -55,5 +55,10 @@
     "ts-node": "^10.4.0",
     "typescript": "^4.3.2",
     "vite": "3.2.0"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "yarn typecheck && yarn test --watchAll=false && lint-staged"
+    }
   }
 }
