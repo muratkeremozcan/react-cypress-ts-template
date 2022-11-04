@@ -7,6 +7,7 @@
     "build": "tsc && vite build",
     "serve": "vite preview",
     "test": "jest",
+    "test:coverage": "yarn test --watchAll=false --collectCoverageFrom=src/**/*.ts* --collectCoverageFrom=!src/**/*.*.ts* --coverage",
     "format": "prettier --ignore-path .gitignore --write \"**/*.+(js|json|css|md|mdx|html)\"",
     "lint": "eslint . --cache-location node_modules/.cache/eslint",
     "typecheck": "tsc --noEmit",

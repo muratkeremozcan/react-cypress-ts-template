@@ -12,7 +12,7 @@ on:
   schedule:
     # update badges every night
     # because we have a few badges that are linked
-    # to the external repositories
+    ## to the external repositories
     - cron: '0 3 * * *'
 
   workflow_dispatch:

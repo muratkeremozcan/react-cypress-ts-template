@@ -119,7 +119,7 @@ jobs:
         with:
           # install: false # Cypress gha will take care of install instead of bahmutov/installs
           start: yarn start
-          wait-on: 'http://localhost:3000'
+          wait-on: 'http://localhost:5173'
           browser: chrome
           # if you want to enable parallelization
           # record: true
