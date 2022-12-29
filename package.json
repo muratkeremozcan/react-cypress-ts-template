@@ -26,6 +26,7 @@
     "web-vitals": "3.0.4"
   },
   "devDependencies": {
+    "@cypress/skip-test": "^2.6.1",
     "@testing-library/cypress": "8.0.3",
     "@testing-library/dom": "8.19.0",
     "@testing-library/jest-dom": "5.16.5",
@@ -38,6 +39,7 @@
     "@typescript-eslint/eslint-plugin": "5.42.0",
     "@typescript-eslint/parser": "5.42.0",
     "cypress": "12.2.0",
+    "cypress-watch-and-reload": "^1.10.5",
     "eslint": "8.26.0",
     "eslint-config-prettier": "8.5.0",
     "eslint-config-react-app": "7.0.1",

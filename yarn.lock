@@ -1221,6 +1221,11 @@
     tunnel-agent "^0.6.0"
     uuid "^8.3.2"
 
+"@cypress/skip-test@^2.6.1":
+  version "2.6.1"
+  resolved "https://extend-159581800400.d.codeartifact.us-east-1.amazonaws.com:443/npm/extend-npm/@cypress/skip-test/-/skip-test-2.6.1.tgz#44a4bc4c2b2e369a7661177c9b38e50d417a36ea"
+  integrity sha512-X+ibefBiuOmC5gKG91wRIT0/OqXeETYvu7zXktjZ3yLeO186Y8ia0K7/gQUpAwuUi28DuqMd1+7tBQVtPkzbPA==
+
 "@cypress/xvfb@^1.2.4":
   version "1.2.4"
   resolved "https://registry.yarnpkg.com/@cypress/xvfb/-/xvfb-1.2.4.tgz#2daf42e8275b39f4aa53c14214e557bd14e7748a"
@@ -2887,6 +2892,11 @@ astral-regex@^2.0.0:
   resolved "https://registry.yarnpkg.com/astral-regex/-/astral-regex-2.0.0.tgz#483143c567aeed4785759c0865786dc77d7d2e31"
   integrity sha512-Z7tMw1ytTXt5jqMcOP+OQteU1VuNK9Y02uuJtKQ1Sv69jXQKKg5cibLwGJow8yzZP+eAc18EmLGPal0bp36rvQ==
 
+async-wait-until@1.2.6:
+  version "1.2.6"
+  resolved "https://extend-159581800400.d.codeartifact.us-east-1.amazonaws.com:443/npm/extend-npm/async-wait-until/-/async-wait-until-1.2.6.tgz#b6d8ada89913028af1928ee078925af75862b108"
+  integrity sha512-7I1zd0bnMEo7WfLfDoLZp+iPYKv/dl7kcW8wphazZn+BAElTGvtkDuQuonr480JzkS7f42VcGyP90mk3+3IfWA==
+
 async@^3.2.0, async@^3.2.3:
   version "3.2.4"
   resolved "https://registry.yarnpkg.com/async/-/async-3.2.4.tgz#2d22e00f8cddeb5fde5dd33522b56d1cf569a81c"
@@ -3364,7 +3374,7 @@ check-types@^11.1.1:
   resolved "https://registry.yarnpkg.com/check-types/-/check-types-11.1.2.tgz#86a7c12bf5539f6324eb0e70ca8896c0e38f3e2f"
   integrity sha512-tzWzvgePgLORb9/3a0YenggReLKAIb2owL03H2Xdoe5pKcUyWRSEQ8xfCar8t2SIAuEDwtmx2da1YB52YuHQMQ==
 
-chokidar@^3.4.2, chokidar@^3.5.3:
+chokidar@3.5.3, chokidar@^3.4.2, chokidar@^3.5.3:
   version "3.5.3"
   resolved "https://registry.yarnpkg.com/chokidar/-/chokidar-3.5.3.tgz#1cf37c8707b932bd1af1ae22c0432e2acd1903bd"
   integrity sha512-Dr3sfKRP6oTcjf2JmUmFJfeVMvXBdegxB0iVQ5eb2V10uFJUCAS8OByZdVAyVb8xXNz3GjjTgj9kLWsZTqE6kw==
@@ -3890,6 +3900,15 @@ csstype@^3.0.2:
   version "3.1.0"
   resolved "https://registry.yarnpkg.com/csstype/-/csstype-3.1.0.tgz#4ddcac3718d787cf9df0d1b7d15033925c8f29f2"
   integrity sha512-uX1KG+x9h5hIJsaKR9xHUeUraxf8IODOwq9JLNPq6BwB04a/xgpq3rcx47l5BZu5zBPlgD342tdke3Hom/nJRA==
+
+cypress-watch-and-reload@^1.10.5:
+  version "1.10.5"
+  resolved "https://extend-159581800400.d.codeartifact.us-east-1.amazonaws.com:443/npm/extend-npm/cypress-watch-and-reload/-/cypress-watch-and-reload-1.10.5.tgz#4fd5ffe7d07cbe871202bc30accfef1d7950d641"
+  integrity sha512-ZuiL4cperNJQd7gr2iJRHRfdcztvfEy6YBnyOG1nj7iTKEl2BG1ODFSh+jE1+7i/K119rM/Wsqa9EBbp3honIQ==
+  dependencies:
+    async-wait-until "1.2.6"
+    chokidar "3.5.3"
+    ws "8.11.0"
 
 cypress@12.2.0:
   version "12.2.0"
@@ -10465,6 +10484,11 @@ write-file-atomic@^3.0.0:
     is-typedarray "^1.0.0"
     signal-exit "^3.0.2"
     typedarray-to-buffer "^3.1.5"
+
+ws@8.11.0:
+  version "8.11.0"
+  resolved "https://extend-159581800400.d.codeartifact.us-east-1.amazonaws.com:443/npm/extend-npm/ws/-/ws-8.11.0.tgz#6a0d36b8edfd9f96d8b25683db2f8d7de6e8e143"
+  integrity sha512-HPG3wQd9sNQoT9xHyNCXoDUa+Xw/VevmY9FoHyQ+g+rrMn4j6FB4np7Z0OhdTgjx6MgQLK7jwSy1YecU1+4Asg==
 
 ws@^7.4.6:
   version "7.5.9"

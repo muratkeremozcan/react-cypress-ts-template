@@ -7,7 +7,10 @@
     "paths": {
       "@support/*": ["support/*"],
       "@fixtures/*": ["fixtures/*"]
-    }
+    },
+    "allowJs": true,
+    "resolveJsonModule": true,
+    "esModuleInterop": true
   },
   "include": ["**/*.ts*", "../cypress.d.ts"],
   "extends": "../tsconfig.json"
