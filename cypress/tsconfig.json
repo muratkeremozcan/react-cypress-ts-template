@@ -12,6 +12,6 @@
     "resolveJsonModule": true,
     "esModuleInterop": true
   },
-  "include": ["**/*.ts*", "../cypress.d.ts"],
+  "include": ["**/*.ts*", "../cypress.d.ts", "e2e/spec2.cyts"],
   "extends": "../tsconfig.json"
 }

@@ -1,4 +1,4 @@
-const cyWatchReload = require('cypress-watch-and-reload/plugins')
+const cyGrep = require('@cypress/grep/src/plugin')
 
 /**
  * The collection of plugins to use with Cypress
@@ -11,6 +11,7 @@ export default function plugins(
 ) {
   return {
     // add plugins here
-    ...cyWatchReload(on, config),
+    // ...cyDataSession(on, config), // example
+    ...cyGrep(config),
   }
 }

@@ -19,6 +19,10 @@ export default defineConfig({
   },
 
   component: {
+    setupNodeEvents(on, config) {
+      tasks(on)
+      return plugins(on, config)
+    },
     specPattern: 'src/**/*.cy.{js,jsx,ts,tsx}',
     devServer: {
       framework: 'create-react-app',
