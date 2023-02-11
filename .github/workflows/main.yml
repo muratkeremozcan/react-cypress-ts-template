@@ -103,6 +103,7 @@ jobs:
   cypress-e2e-test:
     # if you want to enable parallelization
     # strategy:
+    #   fail-fast: false
     #   matrix:
     #     machines: [1, 2]
     needs: [install-dependencies]
@@ -149,6 +150,7 @@ jobs:
   cypress-ct-test:
     # if you want to enable parallelization
     # strategy:
+    #   fail-fast: false
     #   matrix:
     #     machines: [1, 2, 3]
     needs: [install-dependencies]
