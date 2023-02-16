@@ -1,6 +1,7 @@
 import {defineConfig} from 'cypress'
 import plugins from './cypress/support/plugins'
 import tasks from './cypress/support/tasks'
+const createBundler = require('@bahmutov/cypress-esbuild-preprocessor')
 
 export default defineConfig({
   // @ts-expect-error - experimentalSingleTabRunMode is not in the type definition
@@ -13,12 +14,17 @@ export default defineConfig({
     specPattern: 'cypress/e2e/**/*.cy.{js,jsx,ts,tsx}',
     baseUrl: 'http://localhost:3000',
     setupNodeEvents(on, config) {
+      on('file:preprocessor', createBundler())
       tasks(on)
       return plugins(on, config)
     },
   },
 
   component: {
+    setupNodeEvents(on, config) {
+      on('file:preprocessor', createBundler())
+      return config
+    },
     specPattern: 'src/**/*.cy.{js,jsx,ts,tsx}',
     devServer: {
       framework: 'create-react-app',
