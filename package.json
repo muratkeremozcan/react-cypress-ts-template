@@ -27,7 +27,7 @@
   },
   "devDependencies": {
     "@cypress/grep": "4.0.0",
-    "@testing-library/cypress": "8.0.3",
+    "@testing-library/cypress": "9.0.0",
     "@testing-library/dom": "9.3.1",
     "@testing-library/jest-dom": "6.1.2",
     "@testing-library/react": "14.0.0",
