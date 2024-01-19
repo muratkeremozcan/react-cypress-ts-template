@@ -17,7 +17,7 @@ jobs:
           ref: ${{ github.event.pull_request.head.sha }}
 
       - name: Install dependencies
-        uses: cypress-io/github-action@v6.6.0
+        uses: cypress-io/github-action@v6.6.1
         with:
           runTests: false
 
@@ -30,7 +30,7 @@ jobs:
         with:
           ref: ${{ github.event.pull_request.head.sha }}
       - name: Install dependencies
-        uses: cypress-io/github-action@v6.6.0
+        uses: cypress-io/github-action@v6.6.1
         with:
           runTests: false
       - name: unit-test
@@ -64,7 +64,7 @@ jobs:
       #   env:
       #     CYPRESS_INSTALL_BINARY: 0
       - name: Install dependencies
-        uses: cypress-io/github-action@v6.6.0
+        uses: cypress-io/github-action@v6.6.1
         with:
           runTests: false
       - name: lint
@@ -83,7 +83,7 @@ jobs:
       #   env:
       #     CYPRESS_INSTALL_BINARY: 0
       - name: Install dependencies
-        uses: cypress-io/github-action@v6.6.0
+        uses: cypress-io/github-action@v6.6.1
         with:
           runTests: false
       - name: typecheck
@@ -107,7 +107,7 @@ jobs:
       #   with: {useRollingCache: true}
 
       - name: Cypress e2e tests 🧪
-        uses: cypress-io/github-action@v6.6.0
+        uses: cypress-io/github-action@v6.6.1
         with:
           # install: false # Cypress gha will take care of install instead of bahmutov/installs
           start: yarn start
@@ -156,7 +156,7 @@ jobs:
       #   with: {useRollingCache: true}
 
       - name: Cypress component tests 🧪
-        uses: cypress-io/github-action@v6.6.0
+        uses: cypress-io/github-action@v6.6.1
         with:
           # we have already installed everything
           # install: false # Cypress gha will take care of caching instead of bahmutov/installs
