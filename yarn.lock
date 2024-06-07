@@ -4669,10 +4669,10 @@ eslint-module-utils@^2.7.3:
   dependencies:
     debug "^3.2.7"
 
-eslint-plugin-chai-friendly@0.8.0:
-  version "0.8.0"
-  resolved "https://registry.yarnpkg.com/eslint-plugin-chai-friendly/-/eslint-plugin-chai-friendly-0.8.0.tgz#3c4be4e773eb074757ac18e8417a7df26944bf50"
-  integrity sha512-d9W92QHA606QRhxEvPTzGFeZU+CHL5bsyfk7DvaXcxgpfEOny5Pem1G3X2274J1dxStlX/DotuanrQofULhl4g==
+eslint-plugin-chai-friendly@1.0.0:
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/eslint-plugin-chai-friendly/-/eslint-plugin-chai-friendly-1.0.0.tgz#84631f0a415914f15fbaee2ccbf77dc6f3d2cc8a"
+  integrity sha512-M7pDQ/H5IiMz1LsfNi7Js4LvKx7cx0VMJHT/u1d35GOXxkQdJ2vAeaLC5q6GW126KVOnUMJ8WvBMWWLxtfdcog==
 
 eslint-plugin-cypress@3.3.0:
   version "3.3.0"
