@@ -4601,10 +4601,10 @@ eslint-plugin-chai-friendly@1.0.0:
   resolved "https://registry.yarnpkg.com/eslint-plugin-chai-friendly/-/eslint-plugin-chai-friendly-1.0.0.tgz#84631f0a415914f15fbaee2ccbf77dc6f3d2cc8a"
   integrity sha512-M7pDQ/H5IiMz1LsfNi7Js4LvKx7cx0VMJHT/u1d35GOXxkQdJ2vAeaLC5q6GW126KVOnUMJ8WvBMWWLxtfdcog==
 
-eslint-plugin-cypress@3.3.0:
-  version "3.3.0"
-  resolved "https://registry.yarnpkg.com/eslint-plugin-cypress/-/eslint-plugin-cypress-3.3.0.tgz#4ab963193d21ad22aca8379e1d15ba02619ae8db"
-  integrity sha512-HPHMPzYBIshzJM8wqgKSKHG2p/8R0Gbg4Pb3tcdC9WrmkuqxiKxSKbjunUrajhV5l7gCIFrh1P7C7GuBqH6YuQ==
+eslint-plugin-cypress@3.4.0:
+  version "3.4.0"
+  resolved "https://registry.yarnpkg.com/eslint-plugin-cypress/-/eslint-plugin-cypress-3.4.0.tgz#6a7f508cda7579184265b50129b853e0c06c9944"
+  integrity sha512-Rrrr3Ri6wHqzrRr+TyUV7bDS4UnMMrFY1R1PP2F7XdGfe9txDC6lQEshyoNOWqGoPkbbeDm1x1XPc/adxemsnA==
   dependencies:
     globals "^13.20.0"
 
