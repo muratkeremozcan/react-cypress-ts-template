@@ -10,14 +10,11 @@
   "dependencyDashboardApproval": false,
   "packageRules": [
     {
-      "packageNames": [
-        "node",
-        "husky",
-        "typescript",
-        "jest",
-        "ts-jest",
-        "jest-environment-jsdom"
-      ],
+      "groupName": "All Minor and Patch Updates",
+      "matchUpdateTypes": ["minor", "patch"]
+    },
+    {
+      "packageNames": ["husky", "jest", "ts-jest", "jest-environment-jsdom"],
       "enabled": false
     }
   ]
