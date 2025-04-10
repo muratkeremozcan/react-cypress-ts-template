@@ -2191,10 +2191,10 @@
   resolved "https://registry.yarnpkg.com/@types/range-parser/-/range-parser-1.2.4.tgz#cd667bcfdd025213aafb7ca5915a932590acdcdc"
   integrity sha512-EEhsLsD6UsDM1yFhAvy0Cjr6VwmpMWqFBCb9w07wVugF7w9nfajxLuVmngTIpgS6svCnm6Vaw+MZhoDCKnOfsw==
 
-"@types/react-dom@19.1.1":
-  version "19.1.1"
-  resolved "https://registry.yarnpkg.com/@types/react-dom/-/react-dom-19.1.1.tgz#a8d097b28247d1129cf56e74d1622c98978c04ed"
-  integrity sha512-jFf/woGTVTjUJsl2O7hcopJ1r0upqoq/vIOoCj0yLh3RIXxWcljlpuZ+vEBRXsymD1jhfeJrlyTy/S1UW+4y1w==
+"@types/react-dom@19.1.2":
+  version "19.1.2"
+  resolved "https://registry.yarnpkg.com/@types/react-dom/-/react-dom-19.1.2.tgz#bd1fe3b8c28a3a2e942f85314dcfb71f531a242f"
+  integrity sha512-XGJkWF41Qq305SKWEILa1O8vzhb3aOo3ogBlSmiqNko/WmRb6QIaweuZCXjKygVDXpzXb5wyxKTSOsmkuqj+Qw==
 
 "@types/react@19.1.0":
   version "19.1.0"
@@ -4630,12 +4630,12 @@ eslint-plugin-chai-friendly@1.0.1:
   resolved "https://registry.yarnpkg.com/eslint-plugin-chai-friendly/-/eslint-plugin-chai-friendly-1.0.1.tgz#c3290b5294c1145934cf9c07eaa4cec87921d18c"
   integrity sha512-dxD/uz1YKJ8U4yah1i+V/p/u+kHRy3YxTPe2nJGqb5lCR+ucan/KIexfZ5+q4X+tkllyMe86EBbAkdlwxNy3oQ==
 
-eslint-plugin-cypress@4.2.0:
-  version "4.2.0"
-  resolved "https://registry.yarnpkg.com/eslint-plugin-cypress/-/eslint-plugin-cypress-4.2.0.tgz#27cb865de0c9080751db52f164cf45f0979918b7"
-  integrity sha512-v5cyt0VYb1tEEODBJSE44PocYOwQsckyexJhCs7LtdD3FGO6D2GjnZB2s2Sts4RcxdxECTWX01nObOZRs26bQw==
+eslint-plugin-cypress@4.2.1:
+  version "4.2.1"
+  resolved "https://registry.yarnpkg.com/eslint-plugin-cypress/-/eslint-plugin-cypress-4.2.1.tgz#e4ad7cefa9bcd591a4c1faf3e9aadb24638ebae5"
+  integrity sha512-WNhKkQPqXcbDL7pxGnNYBVLlAIOk6eHdFGQFRELsba871guZZe8zZe50GAjBXSZKcvUWbzCUopM+8ArlngdyGQ==
   dependencies:
-    globals "^15.11.0"
+    globals "^15.15.0"
 
 eslint-plugin-flowtype@^8.0.3:
   version "8.0.3"
@@ -5626,10 +5626,10 @@ globals@^13.19.0:
   dependencies:
     type-fest "^0.20.2"
 
-globals@^15.11.0:
-  version "15.11.0"
-  resolved "https://registry.yarnpkg.com/globals/-/globals-15.11.0.tgz#b96ed4c6998540c6fb824b24b5499216d2438d6e"
-  integrity sha512-yeyNSjdbyVaWurlwCpcA6XNBrHTMIeDdj0/hnvX/OLJ9ekOXYbLsLinH/MucQyGvNnXhidTdNhTtJaffL2sMfw==
+globals@^15.15.0:
+  version "15.15.0"
+  resolved "https://registry.yarnpkg.com/globals/-/globals-15.15.0.tgz#7c4761299d41c32b075715a4ce1ede7897ff72a8"
+  integrity sha512-7ACyT3wmyp3I61S4fG682L0VA2RGD9otkqGJIwNUMF1SWUombIIk+af1unuDYgMm082aHYwD+mzJvv9Iu8dsgg==
 
 globby@^11.0.4, globby@^11.1.0:
   version "11.1.0"
