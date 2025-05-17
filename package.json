@@ -38,7 +38,7 @@
     "@types/react-dom": "19.1.5",
     "@typescript-eslint/eslint-plugin": "8.32.1",
     "@typescript-eslint/parser": "8.32.1",
-    "cypress": "13.17.0",
+    "cypress": "14.3.3",
     "eslint": "8.57.1",
     "eslint-config-prettier": "10.1.5",
     "eslint-config-react-app": "7.0.1",
