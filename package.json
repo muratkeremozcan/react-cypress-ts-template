@@ -20,8 +20,8 @@
     "cy:run-ct-fast": "yarn cy:run-ct --config video=false screenshot=false"
   },
   "dependencies": {
-    "react": "19.2.0",
-    "react-dom": "19.2.0",
+    "react": "19.2.1",
+    "react-dom": "19.2.1",
     "react-scripts": "5.0.1",
     "web-vitals": "3.5.2"
   },
