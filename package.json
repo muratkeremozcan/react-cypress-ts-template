@@ -20,8 +20,8 @@
     "cy:run-ct-fast": "yarn cy:run-ct --config video=false screenshot=false"
   },
   "dependencies": {
-    "react": "19.2.3",
-    "react-dom": "19.2.3",
+    "react": "19.2.4",
+    "react-dom": "19.2.4",
     "react-scripts": "5.0.1",
     "web-vitals": "3.5.2"
   },
@@ -36,8 +36,8 @@
     "@types/node": "24.10.9",
     "@types/react": "19.2.9",
     "@types/react-dom": "19.2.3",
-    "@typescript-eslint/eslint-plugin": "8.53.1",
-    "@typescript-eslint/parser": "8.53.1",
+    "@typescript-eslint/eslint-plugin": "8.54.0",
+    "@typescript-eslint/parser": "8.54.0",
     "cypress": "13.17.0",
     "eslint": "8.57.1",
     "eslint-config-prettier": "10.1.8",
