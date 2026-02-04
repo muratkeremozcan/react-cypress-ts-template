@@ -1234,10 +1234,10 @@
   resolved "https://registry.yarnpkg.com/@csstools/selector-specificity/-/selector-specificity-2.0.2.tgz#1bfafe4b7ed0f3e4105837e056e0a89b108ebe36"
   integrity sha512-IkpVW/ehM1hWKln4fCA3NzJU8KwD+kIOvPZA4cqxoJHtE21CCzjyp+Kxbu0i5I4tBNOlXPL9mjwnWlL0VEG4Fg==
 
-"@cypress/grep@4.1.1":
-  version "4.1.1"
-  resolved "https://registry.yarnpkg.com/@cypress/grep/-/grep-4.1.1.tgz#30f0f724583a133894b374c13fb8d5f543ac8dff"
-  integrity sha512-KDM5kOJIQwdn7BGrmejCT34XCMLt8Bahd8h6RlRTYahs2gdc1wHq6XnrqlasF72GzHw0yAzCaH042hRkqu1gFw==
+"@cypress/grep@5.1.0":
+  version "5.1.0"
+  resolved "https://registry.yarnpkg.com/@cypress/grep/-/grep-5.1.0.tgz#9ca3565f51fde6721e3c00a6bdddfbf34b42378a"
+  integrity sha512-n/8m5g2AuZf4thHhuo+rp7Fgkfm06k0uM9NlP0GrfWE5vaIJJ+8U10SOtjVj9bapjYI7l9RZiT87XSBU3wBFOA==
   dependencies:
     debug "^4.3.4"
     find-test-names "^1.28.18"
