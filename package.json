@@ -26,7 +26,7 @@
     "web-vitals": "3.5.2"
   },
   "devDependencies": {
-    "@cypress/grep": "4.1.1",
+    "@cypress/grep": "6.0.0",
     "@testing-library/cypress": "10.1.0",
     "@testing-library/dom": "10.4.1",
     "@testing-library/jest-dom": "6.9.1",
