@@ -20,8 +20,8 @@
     "cy:run-ct-fast": "yarn cy:run-ct --config video=false screenshot=false"
   },
   "dependencies": {
-    "react": "19.2.7",
-    "react-dom": "19.2.7",
+    "react": "19.2.8",
+    "react-dom": "19.2.8",
     "react-scripts": "5.0.1",
     "web-vitals": "3.5.2"
   },
@@ -36,8 +36,8 @@
     "@types/node": "24.13.3",
     "@types/react": "19.2.17",
     "@types/react-dom": "19.2.3",
-    "@typescript-eslint/eslint-plugin": "8.64.0",
-    "@typescript-eslint/parser": "8.64.0",
+    "@typescript-eslint/eslint-plugin": "8.65.0",
+    "@typescript-eslint/parser": "8.65.0",
     "cypress": "13.17.0",
     "eslint": "8.57.1",
     "eslint-config-prettier": "10.1.8",
@@ -49,9 +49,9 @@
     "husky": "4.3.8",
     "jest": "27.5.1",
     "jest-environment-jsdom": "27.5.1",
-    "lint-staged": "17.1.0",
+    "lint-staged": "17.1.1",
     "npm-run-all2": "9.0.2",
-    "prettier": "3.9.5",
+    "prettier": "3.9.6",
     "start-server-and-test": "3.0.11",
     "ts-jest": "27.1.4",
     "typescript": "5.9.3"
