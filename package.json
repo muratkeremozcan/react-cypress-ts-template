@@ -54,7 +54,7 @@
     "prettier": "3.9.6",
     "start-server-and-test": "3.0.12",
     "ts-jest": "27.1.4",
-    "typescript": "5.9.3"
+    "typescript": "7.0.2"
   },
   "husky": {
     "hooks": {
