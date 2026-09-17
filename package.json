@@ -51,7 +51,7 @@
     "jest-environment-jsdom": "27.5.1",
     "lint-staged": "17.5.1",
     "npm-run-all2": "9.0.3",
-    "prettier": "3.9.6",
+    "prettier": "3.9.7",
     "start-server-and-test": "3.0.12",
     "ts-jest": "27.1.4",
     "typescript": "5.9.3"
